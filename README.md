@@ -19,3 +19,10 @@ Pour montrer la dénombrabilité de $~ \mathbb{Q}^{+}$ on utilisera l'arbre de C
 
 + Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1$  
 
+Voici par exemple l'arbre de Calkin-Wilf avec une profondeur de 3 :
+
+		$\frac{1}{1}$
+	   /   \
+	$\frac{1}{2}$     2/1
+   /   \   /   \
+    
