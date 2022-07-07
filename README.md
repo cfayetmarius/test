@@ -1,7 +1,7 @@
 # Preuve de la dénombrabilité de Q+, implémentation en ocaml
 
 On s'intéresse à l'ensemble des rationnels Q+, c'est à dire exactement :  
-$$\mathbb{Q}^{+} = \{\frac{p}{q}, p \in \mathbb{N} \wedge q \in \mathbb{N}^{\*} \}$$  
+$$\mathbb{Q}^{\+} = \{\frac{p}{q}, p \in \mathbb{N} \wedge q \in \mathbb{N}^{\*} \}$$  
 On considère que les fractions "non réduites" sont identiques aux fractions "réduites" (par exemple $\frac{6}{3}$ sera strictement équivalent à $\frac{2}{1}$). Pour être précis, ces deux fractions appartiennent à la même classe d'équivalence). On travaillera par la suite sur des frcations réduites (c'est à dire dont on peut dire que le PGCD du numérateur et du dénominateur est 1) pour plus de clarté.  
 Dire qu'un ensemble E est dénombrable, c'est grossièrement dire que si l'on avait une main à n doigts, où n est un entier naturel, on pourrait compter les éléments de E. Formellement, on dira qu'il existe une bijection entre E et $\mathbb{N}$ (ou une de ses sous parties). Quelques exemples d'ensemble dénombrables :  
 
