@@ -21,8 +21,8 @@ Pour montrer la dénombrabilité de $~ \mathbb{Q}^{+}$ on utilisera l'arbre de C
 
 Voici par exemple l'arbre de Calkin-Wilf avec une profondeur de 3 :
 ```text
-		1/1
-	   /   \
+        1/1
+       /   \
     1/2     2/1
    /   \   /   \
  1/3  3/2 2/3  3/1
