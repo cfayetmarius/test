@@ -55,11 +55,11 @@ val prof3 : (frac * frac * frac) * frac * (frac * frac * frac) =
 
 ## Les fractions de l'arbre sont irréductibles
 
-Un premier élément de notre preuve est que toute fraction de l'arbre est irréductible. On raisonne par récurrence :
-Propriété :
-Pour tout noeud à une profondeur n, ce noeud est une fraction irréductible.
-Initialisation :
-Le noeud à une profondeur 0 est $\frac{1}{1} $, irréductible.
+Un premier élément de notre preuve est que toute fraction de l'arbre est irréductible. On raisonne par récurrence :  
+Propriété :  
+Pour tout noeud à une profondeur n, ce noeud est une fraction irréductible.  
+Initialisation :  
+Le noeud à une profondeur 0 est $\~ \frac{1}{1} $, irréductible.  
 Hérédité : 
 Supposons que tous les noeuds à une profondeur n soient irréductibles pour n fixé dans $\mathbb{N} $, montrons que tous les noeuds à une profondeur n+1 sont irréductibles.  
 Les noeuds à une profondeur n+1 sont tous les fils directs des noeuds $N_k $ à une profondeur n. Ils s'écrivent donc tous $N_k + 1$ si ils sont fils droits directs ou $\frac{N_k}{N_k +1} $ si ils sont fils gauches directs. 
