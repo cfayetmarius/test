@@ -21,9 +21,11 @@ Pour montrer la dénombrabilité de $~ \mathbb{Q}^{+}$ on utilisera l'arbre de C
 
 Voici par exemple l'arbre de Calkin-Wilf avec une profondeur de 3 :
 ```text
-        1/1
-       /   \
+		1/1
+	   /   \
     1/2     2/1
    /   \   /   \
  1/3  3/2 2/3  3/1
 ```
+
+Nous allons baser notre preuve sur cet arbre, montrant que l'ensemble des noeuds de cet arbre est en bijection avec l'ensemble des entiers naturels. Pour ça nous allons poser une suite $U_n $ définie sur $\mathbb{N} $, qui parcourt l'arbre "de gauche à droite". Par exemple $U_0 = 1, U_1 = \frac{1}{2}, U_2 = \frac{2}{1} $ etc...   
