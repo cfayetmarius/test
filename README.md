@@ -17,7 +17,7 @@ Pour montrer la dénombrabilité de $~ \mathbb{Q}^{+}$ on utilisera l'arbre de C
 
 + Chaque noeud est une fraction, qu'on peut nommer $\frac{p}{q} $  
 
-+ Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1$. On peut aussi dire qu'un noeud $\frac{p}{q} $ a pour fils gauche $\frac{p}{q+1} $ et pour fils droit $\frac{p+1}{q}$
++ Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1$. On peut aussi dire qu'un noeud $\frac{p}{q} $ a pour fils gauche $\frac{p}{q+1} $ et pour fils droit $\frac{p+1}{q} $
 
 Voici par exemple l'arbre de Calkin-Wilf avec une profondeur de 3 :
 ```text
