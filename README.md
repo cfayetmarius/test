@@ -17,7 +17,7 @@ Pour montrer la dénombrabilité de $~ \mathbb{Q}^{+}$ on utilisera l'arbre de C
 
 + Chaque noeud est une fraction, qu'on peut nommer $\frac{p}{q} $  
 
-+ Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1 $. On peut aussi dire qu'un noeud $\frac{p}{q} $ a pour fils gauche $\frac{p}{q+1} $ et pour fils droit $\frac{p+1}{q} $
++ Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1 $. On peut aussi dire qu'un noeud $\frac{p}{q} $ a pour fils gauche $\frac{p}{q+1} $ et pour fils droit $\~ \frac{p+1}{q} $
 
 Voici par exemple l'arbre de Calkin-Wilf avec une profondeur de 3 :
 ```text
@@ -53,7 +53,20 @@ val prof3 : (frac * frac * frac) * frac * (frac * frac * frac) =
    ({p = 2; q = 3}, {p = 2; q = 1}, {p = 3; q = 1}))
 ```
 
-## Chaque fraction est représentée dans l'arbre 
+## Les fractions de l'arbre sont irréductibles
 
-Ici nous allons montrer que chaque fraction est représentée dans l'arbre, autrement dit nous allons prouver la surjectivité de $~U_n $ dans ${\mathbb{Q}^{+}}^{\*}$. 
-$Soit \~(p,q) \in \mathbb{N}^{2} \~ tel \~ que \~ PGCD(p,q) = 1$ 
+Un premier élément de notre preuve est que toute fraction de l'arbre est irréductible. On raisonne par récurrence :
+Propriété :
+Pour tout noeud à une profondeur n, ce noeud est une fraction irréductible.
+Initialisation :
+Le noeud à une profondeur 0 est $\frac{1}{1} $, irréductible.
+Hérédité : 
+Supposons que tous les noeuds à une profondeur n soient irréductibles pour n fixé dans $\mathbb{N} $, montrons que tous les noeuds à une profondeur n+1 sont irréductibles.  
+Les noeuds à une profondeur n+1 sont tous les fils directs des noeuds $N_k $ à une profondeur n. Ils s'écrivent donc tous $N_k + 1$ si ils sont fils droits directs ou $\frac{N_k}{N_k +1} $ si ils sont fils gauches directs. 
+Cas du fils droit :  
+Par hypothèse de récurrence $N_k $ est une fraction irréductible, donc $N_k + 1 $ est irréductible (on peut le prouver facilement par l'absurde en divisant tout par le dénominateur de $N_k $, ou par un théorème plus fort comme la contraposée théorème de bézout). Or $N_k + 1 = N_{k+1} $ donc on a bien $N_{k+1} $ irréductible.
+Cas de fils gauche :
+Par hypothèse de récurrence $N_k $ est une fraction irréductible donc $\frac{N_k}{N_k + 1} $ est irréductible (On peut le prouver facilement par l'absurde en divisant tout par le $N_k $, ou par un théorème plus fort comme la contraposée théorème de bézout). Or $\frac{N_k}{N_k + 1} = N_{k+1} $ 
+
+
+## Chaque fraction est représentée dans l'arbre 
