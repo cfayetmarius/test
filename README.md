@@ -62,7 +62,7 @@ Initialisation :
 Le noeud à une profondeur 0 est $\~ \frac{1}{1} $, irréductible.  
 Hérédité : 
 Supposons que tous les noeuds à une profondeur n soient irréductibles pour n fixé dans $\~ \mathbb{N} $, montrons que tous les noeuds à une profondeur n+1 sont irréductibles.  
-Les noeuds à une profondeur n+1 sont tous les fils directs des noeuds $\~ N_k $ à une profondeur n. Ils s'écrivent donc tous $\~ N_k + 1$ si ils sont fils droits directs ou $\~ \frac{N_k}{N_k +1} $ si ils sont fils gauches directs. 
+Les noeuds à une profondeur n+1 sont tous les fils directs des noeuds $\~ N_k $ à une profondeur n. Ils s'écrivent donc tous $\~ N_k + 1$ si ils sont fils droits directs ou $\frac{N_k}{N_k +1} $ si ils sont fils gauches directs. 
 Cas du fils droit :  
 Par hypothèse de récurrence $N_k $ est une fraction irréductible, donc $N_k + 1 $ est irréductible (on peut le prouver facilement par l'absurde en divisant tout par le dénominateur de $N_k $, ou par un théorème plus fort comme la contraposée théorème de bézout). Or $N_k + 1 = N_{k+1} $ donc on a bien $N_{k+1} $ irréductible.
 Cas de fils gauche :
