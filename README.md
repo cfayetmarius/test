@@ -54,6 +54,3 @@ val prof3 : (frac * frac * frac) * frac * (frac * frac * frac) =
 ```
 
 ## Chaque fraction est représentée dans l'arbre 
-
-Ici nous allons montrer que chaque fraction est représentée dans l'arbre, autrement dit nous allons prouver la surjectivité de $~U_n $ dans ${\mathbb{Q}^{+}}^{\*}$. 
-$Soit \~(p,q) \in \mathbb{N}^{2} \~ tel \~ que \~ PGCD(p,q) = 1$ 
