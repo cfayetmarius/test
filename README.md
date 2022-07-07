@@ -31,4 +31,4 @@ Voici par exemple l'arbre de Calkin-Wilf avec une profondeur de 3 :
 Nous allons baser notre preuve sur cet arbre, montrant que l'ensemble des noeuds de cet arbre est en bijection avec l'ensemble des entiers naturels. Pour ça nous allons poser une suite $U_n $ définie sur $\mathbb{N}^{\*} $, qui parcourt l'arbre "de gauche à droite". Par exemple $~ U_1 = 1, U_2 = \frac{1}{2}, U_3 = \frac{2}{1} $ etc... On pose $U_0 = 0$, ce qui permet de "compléter" la bijectivité de $U_n$ dans $\mathbb{Q}^{+}$.
 Autrement dit, nous allons montrer que pour chaque fraction F qui existe il existe un unique n tel que $U_n = F$, ou que F est représenté exactement une fois dans l'arbre.
 
-## Chaque fraction est représentée dans l'arbre (surjectivité de $~U_n $ dans $\mathbb{Q}^{+}^{\*}$)
+## Chaque fraction est représentée dans l'arbre (surjectivité de $~U_n $ dans ${\mathbb{Q}^{+}}^{\*}$)
