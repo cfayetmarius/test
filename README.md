@@ -1,4 +1,4 @@
-# Preuve de la dénombrabilité de $~\ mathbb{Q}^{+} $, implémentation en ocaml
+# Preuve de la dénombrabilité de $~ \mathbb{Q}^{+} $, implémentation en ocaml
 ## Introduction
 On s'intéresse à l'ensemble des rationnels $~ \mathbb{Q}^{+} $, c'est à dire exactement :  
 $\mathbb{Q}^{\+} = \\{\frac{p}{q}, p \in \mathbb{N} \wedge q \in \mathbb{N}^{\*} \\}$  
@@ -10,3 +10,9 @@ Dire qu'un ensemble E est dénombrable, c'est grossièrement dire que si l'on av
 + L'ensemble des nombres pairs, $\\{2n, n \in \mathbb{N} \\} $, est dénombrable. Si on pose $~f(n) = 2n ~ \forall ~ n \in \mathbb{N} $ on remarque que cette fonction est une bijection de $\~ \mathbb{N} $ dans $~\\{2n, n \in \mathbb{N} \\} $  
 Nous allons maintenant montrer que $\mathbb{Q}$ est dénombrable, et faire l'implémentation des outils que l'on utilisera en ocaml. 
 
+## Arbre de Calkin-Wilf
+
+Pour montrer la dénombrabilité de $~ \mathbb{Q}^{+}$ on utilisera l'arbre de Calkin-Wilf. Un arbre binaire est une structure de données qui peut se représenter sous la forme d'une hiérarchie dont chaque élément est appelé nœud, le nœud initial étant appelé racine. Ce document ne détaillera pas tous les termes utilisés pour parler de l'arbre de Calkin-Wilf, c'est cependant une structure de données assez intuitive et simple à comprendre (en cas de question voir fr.wikipedia.org/wiki/Arbre_binaire). L'arbre de Calkin-Wilf est défini comme suit :  
++La racine vaut 1
++Chaque noeud est une fraction, qu'on peut nommer $\frac{p}{q} $
++Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1$
