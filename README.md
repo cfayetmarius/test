@@ -13,9 +13,9 @@ Nous allons maintenant montrer que $\mathbb{Q}$ est dénombrable, et faire l'imp
 ## Arbre de Calkin-Wilf
 
 Pour montrer la dénombrabilité de $~ \mathbb{Q}^{+}$ on utilisera l'arbre de Calkin-Wilf. Un arbre binaire est une structure de données qui peut se représenter sous la forme d'une hiérarchie dont chaque élément est appelé nœud, le nœud initial étant appelé racine. Ce document ne détaillera pas tous les termes utilisés pour parler de l'arbre de Calkin-Wilf, c'est cependant une structure de données assez intuitive et simple à comprendre (en cas de question voir fr.wikipedia.org/wiki/Arbre_binaire). L'arbre de Calkin-Wilf est défini comme suit :  
-+La racine vaut 1  
++ La racine vaut 1  
 
-+Chaque noeud est une fraction, qu'on peut nommer $\frac{p}{q} $  
++ Chaque noeud est une fraction, qu'on peut nommer $\frac{p}{q} $  
 
-+Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1$  
++ Le fils gauche de chaque noeud vaut $\frac{\frac{p}{q}}{1+\frac{p}{q}} $, et chaque fils droit vaut $\frac{p}{q} + 1$  
 
