@@ -2,7 +2,7 @@
 
 On s'intéresse à l'ensemble des rationnels Q+, c'est à dire exactement :  
 
-<img src="https://render.githubusercontent.com/render/math?math={\mathbb{Q}^{+} = \{\frac{p}{q}, p \in \mathbb{N} \wedge q \in \mathbb{N}^{*} \}}"> 
+<img src="https://render.githubusercontent.com/render/math?math={\displaystyle\mathbb{Q}^{+} = \{\frac{p}{q}, p \in \mathbb{N} \wedge q \in \mathbb{N}^{*} \}}"> 
 
 
 On considère que les fractions "non réduites" sont identiques aux fractions "réduites" (par exemple $\frac{6}{3}$ sera strictement équivalent à $\frac{2}{1}$. Pour être précis, ces deux fractions appartiennent à la même classe d'équivalence). On travaillera par la suite sur des frcations réduites (c'est à dire dont on peut dire que le PGCD du numérateur et du dénominateur est 1) pour plus de clarté.  
