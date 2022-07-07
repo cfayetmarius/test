@@ -1,4 +1,4 @@
-# Preuve de la dénombrabilité de $~ \mathbb{Q}^{+} $, implémentation en ocaml
+# Preuve de la dénombrabilité de Q+, implémentation en ocaml
 ## Introduction
 On s'intéresse à l'ensemble des rationnels Q+, c'est à dire exactement :  
 $\mathbb{Q}^{\+} = \\{\frac{p}{q}, p \in \mathbb{N} \wedge q \in \mathbb{N}^{\*} \\}$  
@@ -8,8 +8,5 @@ Dire qu'un ensemble E est dénombrable, c'est grossièrement dire que si l'on av
 
 + $\\{1,2,3,4,5\\}$ est dénombrable car la fonction identité définie sur $\\{1,2,3,4,5\\} $ forme une bijection avec notre ensemble formé uniquement d'entiers naturels. De la même façon, on remarque que la fonction identité forme une bijection de toute partie de $\~ \mathbb{N} $ sur elle-même, c'est pourquoi toute partie de $\~ \mathbb{N} $ est dénombrable. C'est cohérent avec notre définition *naïve* de la dénombrabilité : avec suffisamment de doigts sur notre main, on peut compter tous les ensembles finis d'entiers naturels. De la même façon, $\~ \mathbb{N}$ est dénombrable puisqu'il est en bijection avec lui-même par la fonction identité.
 + L'ensemble des nombres pairs, $\\{2n, n \in \mathbb{N} \\} $, est dénombrable. Si on pose $~f(n) = 2n ~ \forall ~ n \in \mathbb{N} $ on remarque que cette fonction est une bijection de $\~ \mathbb{N} $ dans $~\\{2n, n \in \mathbb{N} \\} $  
-Nous allons maintenant montrer que $\mathbb{Q}^{+} $ est dénombrable, et faire l'implémentation des outils que l'on utilisera en ocaml. 
+Nous allons maintenant montrer que $\mathbb{Q}$ est dénombrable, et faire l'implémentation des outils que l'on utilisera en ocaml. 
 
-##Arbre de Calkin-Wilf
-
-Pour montrer que 
